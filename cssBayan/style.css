@@ -15,6 +15,7 @@ body {
   padding: 0;
   font-family: 'Teko', sans-serif;
 }
+
 section {
   background-color: rgb(255, 255, 255);
 }
@@ -32,4 +33,23 @@ h1 {
   font-size: 5rem;
   color: black;
   margin-bottom: 3rem;
+}
+
+.accordion-item {
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.accordion-input {
+  display: inline;
+  width: 0;
+  height: 0;
+  margin: 0;
+  appearance: none;
+}
+
+.accordion-label {
+  display: flex;
+  flex-direction: column;
 }
