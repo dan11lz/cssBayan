@@ -94,3 +94,20 @@ i {
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
+
+.accordion-input:checked ~ .accordion-label {
+  color: rgb(0, 34, 255);
+}
+.accordion-input:checked + .accordion-label .fa-plus {
+  display: none;
+}
+.accordion-input:checked + .accordion-label .fa-minus {
+  display: block;
+}
+
+.accordion-input:checked ~ label .meme {
+  display: block;
+  padding: 1rem;
+  overflow: visible;
+  transition: visible 1s ease-in-out;
+}
