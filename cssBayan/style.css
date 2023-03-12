@@ -111,3 +111,57 @@ i {
   overflow: visible;
   transition: visible 1s ease-in-out;
 }
+
+@media (min-width: 821px) {
+  .container:hover i {
+    opacity: 1;
+  }
+  .accordion-item:hover {
+    box-shadow: 0 0rem 1rem rgba(0, 34, 255, 1);
+  }
+  .accordion-item:hover img {
+    opacity: 1;
+  }
+
+  input[type='radio']:hover ~ .accordion-label {
+    color: rgb(0, 34, 255);
+  }
+
+  .accordion-item:hover .meme,
+  .accordion-input:hover ~ .meme {
+    display: block;
+    opacity: 0;
+    animation: OnOFF 1.5s linear forwards;
+  }
+
+  .accordion-input:hover ~ .accordion-label .fa-plus {
+    display: none;
+  }
+  .accordion-input:hover ~ .accordion-label .fa-minus {
+    display: block;
+  }
+
+  .accordion-label:active p {
+    color: rgb(0, 0, 0);
+  }
+  .accordion-label:active i {
+    color: rgb(0, 0, 0);
+  }
+  .container:hover .accordion-summary {
+    color: rgb(0, 34, 255);
+  }
+
+  .accordion-summary,
+  .meme {
+    cursor: pointer;
+  }
+}
+
+@keyframes OnOFF {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
