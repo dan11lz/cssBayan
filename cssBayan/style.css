@@ -15,3 +15,21 @@ body {
   padding: 0;
   font-family: 'Teko', sans-serif;
 }
+section {
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+  font-size: 5rem;
+  color: black;
+  margin-bottom: 3rem;
+}
