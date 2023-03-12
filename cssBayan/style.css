@@ -69,7 +69,6 @@ h1 {
 }
 
 i {
-  padding: 1rem;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
@@ -163,5 +162,32 @@ i {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 820px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  i {
+    opacity: 1;
+  }
+  .accordion-summary {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  .mem {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion-summary {
+    font-size: 1.2rem;
+  }
+
+  .meme-img {
+    width: 100%;
   }
 }
